@@ -1,5 +1,4 @@
 import RegisterPage from '../../pages/registerPage.js';
-
 const registerObj = new RegisterPage();
 
 describe('Test Automation', () => {

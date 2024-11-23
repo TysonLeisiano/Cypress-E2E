@@ -11,7 +11,7 @@ class RegisterPage {
         continueButton:"input[value='Continue']"
     }
     openUrl() {
-        cy.visit(Cypress.env('baseUrl'))
+        cy.visit(Cypress.env('registerUrl'))
     }
     enterFirstname(firstName) {
         cy.get(this.elements.firstName).type(firstName)
