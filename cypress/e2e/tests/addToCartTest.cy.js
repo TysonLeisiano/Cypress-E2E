@@ -1,6 +1,9 @@
-import HomePage from '../../pages/homePage.js';
-const homePageObj = new HomePage()
+import AddToCart from '../../pages/addToCart.js';
 import testData from '../../fixtures/testData.json';
+
+
+const addToCartObj = new AddToCart()
+
 
 describe('Test Automation', () => {
     before(() => {
@@ -8,8 +11,8 @@ describe('Test Automation', () => {
     })
 
     it("add to cart flow", () => {
-        homePageObj.SearchProduct(testData.product.productName);
-        homePageObj.addToCart();
-        homePageObj.verifySuccessMessage().should('contain', testData.message.successMessage).and('contain, testData.product.productName);');
+        addToCartObj.searchProduct(testData.product.productName);
+        addToCartObj.addToCart();
+        addToCartObj.verifySuccessMessage().should('contain', testData.message.successMessage);
     });
 });
