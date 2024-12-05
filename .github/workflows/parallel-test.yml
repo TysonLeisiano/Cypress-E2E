@@ -1,4 +1,4 @@
-name: github actions CICD for a specific file
+name: Parallel Test Automation  
 on: push
 jobs:
   Register-run:
@@ -20,7 +20,8 @@ jobs:
         uses: actions/checkout@v4
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
+      # test
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with: 
-            command: npn run test:addToCart
+            command: npm run test:addToCart

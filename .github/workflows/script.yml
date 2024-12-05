@@ -1,7 +1,7 @@
 name: github actions CICD for a specific file
 on: push
 jobs:
-  cypress-run:
+  Register-run:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
@@ -11,4 +11,16 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-            command: npm run test:addToCart
+            command: npm run test:register
+
+  Add-to-cart-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with: 
+            command: npn run test:addToCart
