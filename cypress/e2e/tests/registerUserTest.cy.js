@@ -1,4 +1,4 @@
-import RegisterPage from '../../pages/registerPage.js';
+import RegisterPage from '../../pages/registerUserPage.js';
 const registerObj = new RegisterPage();
 
 describe('Test Automation', () => {

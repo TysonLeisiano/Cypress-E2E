@@ -1,4 +1,4 @@
-name: Parallet Test Automation
+name: Parallet Test Execution
 on: push
 
 jobs:
@@ -37,3 +37,6 @@ jobs:
         with: 
             name: mochawesome-report - Add to cart flow
             path: cypress/reports/html
+
+
+            

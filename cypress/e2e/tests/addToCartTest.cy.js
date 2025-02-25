@@ -1,4 +1,4 @@
-import AddToCart from '../../pages/addToCart.js';
+import AddToCart from '../../pages/addToCartPage.js';
 import testData from '../../fixtures/testData.json';
 
 
