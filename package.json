@@ -9,8 +9,9 @@
     "cy:run": "cypress run",
     "cy:verify": "cypress verify",
     "cy:cloud": "npx cypress run",
-    "test": "cypress run --spec 'cypress/e2e/tests/**/*.cy.js'",
     "test:all": "cypress run --spec 'cypress/e2e/tests/**/*.cy.js' --headed --browser chrome",
+    "test": "cypress run",
+    "test:ci": "start-server-and-test start http://localhost:3000 test",
     "test:report": "cypress-mochawesome-reporter --reportDir cypress/reports --reportFilename mochawesome-report.html",
     "test:open": "cypress open"
   }
